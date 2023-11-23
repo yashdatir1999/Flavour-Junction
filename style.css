@@ -1,0 +1,980 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    color: rgba(245, 245, 245, 0.808);
+}
+.background{
+    height: 525vh;
+    width: 100%;
+    /* background-image: url(https://i.pinimg.com/564x/24/af/7b/24af7b7f1ad25732770c61dea551e748.jpg); */
+    background-position: center;
+    background-image: url(https://i.pinimg.com/564x/8c/4f/b0/8c4fb0f24e6679e1c93faf62f4020fc6.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.overlay{
+    border-radius: 1vmax;
+    height: 525vh;
+    width: 100%;
+    box-shadow: 0 0 2vmax rgba(245, 245, 245, 0.452);
+    /* background-color:rgba(0, 0, 0, 0.199); */
+    background-color:rgba(34, 30, 30, 0.568);
+    backdrop-filter: blur(1vmax);
+}
+@media (max-width: 600px) {
+    .background{
+        height: 630vh;
+        width: 100%;
+    }
+    .overlay{
+        height: 630vh;
+        width: 100%;
+    }
+}
+/* ==================== PAGE 1 STARTS ======================= */
+
+
+.page1{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    /* background-color: aquamarine; */
+    display: flex;
+    margin-bottom: 5vh;
+}
+.page1-left{
+    height: 100vh;
+    width: 35%;
+    /* margin-top: 5vh; */
+    
+    /* background-color: tan; */
+}
+.page1-logo{
+    margin-top: 2vmax;
+    /* background-color: red; */
+    display: flex;
+    text-align: center;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 15vh;
+}
+.page1-logo >h1 >img{
+    height: 19vh;
+    transform: translate(5vmax , -1.5vmax);
+   
+}
+.page1-logo >h1{
+    
+    height: 15vh;
+    font-weight: 900;
+    text-shadow: 0 0 2vmax rgba(226, 212, 212, 0.699);
+    /* padding-top: 2vh; */
+    margin-left: 2vw;
+    font-size: 4vmax;
+    color: whitesmoke;
+    /* font-family: 'Dancing Script', cursive; */
+    font-family: 'Amiri', serif;
+    /* background-color: red; */
+}
+.page1-left >h2{
+    font-size: 3vmax;
+    line-height: 3vmax;
+    font-family: 'IM Fell English SC', serif;
+    /* font-family: 'Courgette', cursive; */
+    letter-spacing: 0.1vmax;
+    margin: 5vh 5vw;
+    color: rgba(255, 255, 0, 0.904);
+    text-shadow: 0 0 0.3vmax rgba(0, 0, 0, 0.37);
+    /* background-color: aqua; */
+}
+.page1-left >button{
+    margin: 5vh 5vw;
+    padding: 1vmax 2.5vmax;
+    font-weight: 700;
+    border-top-left-radius: 1.5vmax;
+    border-top-right-radius: 1.5vmax;
+    border-bottom-left-radius: 1.5vmax;
+    box-shadow: -0.1vmax 0.2vmax 1vmax black;
+    border: none;
+    letter-spacing: 0.1vmax;
+    background-color: yellow;
+    color: black;
+}
+
+/* .btns:hover{
+    box-shadow: none;
+    background-color: rgba(245, 245, 245, 0.685);
+    color: black;
+    transform: scale(.9);
+    font-weight: 900;
+    transition: all .7s;
+    border: none;
+    border: 1px solid rgba(0, 0, 0, 0.384);
+    box-shadow: -0.1vmax 0.2vmax .5vmax rgba(245, 245, 245, 0.5);
+
+} */
+.page1-foodicon{
+    /* background-color: red; */
+    padding-left: 5vmax;
+    margin-top: 1vmax;
+}
+.page1-foodicon >img{
+    margin-right: 0.2vmax;
+    border-radius: 0.7vmax;
+    padding: 0.2vmax;
+    backdrop-filter: blur(15vmax);
+    /* background-color: rgba(172, 164, 164, 0.507); */
+}
+.page1-right{
+    height: 100vh;
+    width: 67%;
+    overflow: hidden;
+    /* background-color: yellowgreen; */
+    position: relative;
+}
+.page1-right >img{
+    height: 60vmax;
+    margin-top: -15vmax;
+    margin-left: 8vmax;
+    transform: rotate(260deg);
+}
+
+@media (max-width: 600px) {
+    .page1{
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        
+    }
+    .page1-left{
+        height: 65vh;
+        width: 100%;
+    }
+    .page1-logo{
+        margin-top: -7vmax;
+        justify-content: center;
+    }
+    .page1-logo >h1{
+        font-size: 5vmax;
+    }
+    .page1-left >h2{
+        margin-left: 5vmax;
+        font-size: 5vmax;
+        line-height: 5vmax;
+    }
+    .page1-left >button{
+        padding: 1.5vmax 3.5vmax;
+        margin-left: 5vmax;
+        margin-top: -5vmax;
+    }
+    .page1-foodicon >img{
+        margin-right: 1vmax;
+        margin-bottom: 5vmax;
+    }
+    .page1-right{
+        height: 39vh;
+        width: 100%;
+        /* background-color: pink; */
+        
+    }
+    
+}
+/* ==================== PAGE 1 COMPLETE ======================= */
+
+/* ==================== PAGE 2 STARTS ======================= */
+.page2{
+    height: 100vh;
+    width: 100%;
+    /* background-color: lightpink; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.page2-headding{
+    height: 30vh;
+    width: 100%;
+    /* background-color: slateblue; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.page2-headding >h1{
+    font-size: 5vmax;
+    /* text-shadow: 0 0 0.5vmax rgba(197, 188, 188, 0.575) ; */
+    /* letter-spacing: .5vmax; */
+    /* font-family: 'Yesteryear', cursive; */
+    font-family: 'Ysabeau SC', sans-serif;
+}
+.page2-headding >p{
+    text-align: center;
+    /* font-size: 2vmax; */
+    font-weight: 200;
+    font-family: 'Nanum Brush Script', cursive;
+}
+.page2-headding >p >span{
+   font-weight: 900;
+   font-size: 2vmax;
+   /* font-family: 'Rancho', cursive; */
+   font-family: 'Ysabeau SC', sans-serif;
+}
+.page2-contener{
+    width: 80%;
+    height: 60vh;
+    /* background-color: tomato; */
+    display: flex;
+    justify-content: space-evenly;
+}
+.page2-box1{
+    height: 80%;
+    width: 22%;
+    /* position: relative; */
+    /* background-color: aqua; */
+}
+.page2-box1-img{
+    height: 75%;
+    width: 100%;
+    background-image: url(./page-2-plate2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.page2-box1-info{
+    height: 25%;
+    width: 100%;
+    /* background-color: beige; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.page2-box1-info >h1,.page2-box2-info >h1,.page2-box3-info >h1{
+    font-family: 'Ysabeau SC', sans-serif;
+    font-size: 2.5vmax;
+    font-weight: 500;
+    /* background-color: orange; */
+}
+.page2-box1-info >button,.page2-box2-info >button,.page2-box3-info >button{
+    margin-bottom: .8vmax;
+    padding: 0.8vmax 2.5vmax;
+    font-weight: 700;
+    border-top-left-radius: 1.5vmax;
+    border-top-right-radius: 1.5vmax;
+    border-bottom-left-radius: 1.5vmax;
+    box-shadow: -0.1vmax 0.2vmax 1vmax black;
+    border: none;
+    letter-spacing: 0.1vmax;
+    background-color: yellow;
+    color: black;
+    margin-top: 0.5vmax;
+}
+/* .page2-box1-info >h1::before{
+    position: absolute;
+    content: "";
+    cursor: pointer;
+    height: 0.8%;
+    bottom: 0;
+    width: 26%;
+    background-color: red;
+} */
+.page2-box2{
+    height: 80%;
+    width: 22%;
+    /* background-color: aqua; */
+}
+.page2-box2-img{
+    height: 75%;
+    width: 100%;
+    background-image: url(./page-2-plate1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.page2-box2-info{
+    height: 25%;
+    width: 100%;
+    /* background-color: beige; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.page2-box3{
+    height: 80%;
+    width: 22%;
+    /* background-color: aqua; */
+}
+.page2-box3-img{
+    height: 75%;
+    width: 100%;
+    background-image: url(./page-2-plate3.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.page2-box3-info{
+    height: 25%;
+    width: 100%;
+    /* background-color: beige; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+@media (max-width: 600px) {
+    .page2{
+        margin-top: -7vmax;
+        width: 100%;
+        height: 100vh;
+        justify-content: initial;
+        /* background-color: aqua; */
+    }
+    .page2-headding{
+        /* background-color: red; */
+        width: 90%;
+        height: 15vh;
+        justify-content: start;
+        
+    }
+    .page2-headding >h1{
+        text-align: center;
+        line-height: 4vmax;
+        font-size: 3.5vmax;
+        margin-bottom: 1vmax;
+        font-weight: 700;
+    }
+    .page2-contener{
+        width: 95%;
+        height: 85vh;
+        flex-direction: column;
+        /* background-color: greenyellow; */
+    }    
+    .page2-box1, .page2-box2, .page2-box3{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        width: 50%;
+        height: 70vh;
+        margin-bottom: 2vmax;
+        /* background-color: palevioletred; */
+    }
+    .page2-box2{
+        margin-left: 11vmax;
+    }
+    .page2-box3{
+        margin-left: 22vmax;
+    }
+}
+/* ==================== PAGE 2 COMPLETE ======================= */
+
+/* ==================== PAGE 3 STARTS ======================= */
+
+.page3{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color:rgba(0, 0, 0, 0.288); */
+}
+.page3-headding{
+    height: 30vh;
+    width: 100%;
+    /* background-color: slateblue; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.page3-headding >h1{
+    font-size: 5vmax;
+    /* text-shadow: 0 0 0.5vmax rgba(0, 0, 0, 0.575) ; */
+    /* letter-spacing: .5vmax; */
+    /* font-family: 'Yesteryear', cursive; */
+    font-family: 'Ysabeau SC', sans-serif;
+}
+.page3-headding >p{
+    text-align: center;
+    /* font-size: 2vmax; */
+    font-weight: 700;
+    font-family: 'Nanum Brush Script', cursive;
+}
+.page3-headding >p >span{
+    font-weight: 900;
+    font-size: 2vmax;
+    font-family: 'Ysabeau SC', sans-serif;
+}
+.page3-contener{
+    height: 70vh;
+    width: 90%;
+    /* background-color: palevioletred; */
+    display: flex;
+    align-items: end;
+    justify-content: space-around;
+}
+.page3-box1, .page3-box3
+{
+    text-align: center;
+    height: 45vh;
+    width: 25%;
+    /* background-color: red; */
+}
+.page3-box1 >h1, .page3-box3 >h1{
+    /* font-family: 'Rancho', cursive; */
+    margin-bottom: 0.5vmax;
+    line-height: 3vmax;
+    font-family: 'Ysabeau SC', sans-serif;
+    font-size: 3vmax;
+}
+.page3-box1 >p, .page3-box3 >p{
+    /* font-family: 'Nanum Brush Script', cursive; */
+    line-height: 1.8vmax;
+    font-family: 'Caveat', cursive;
+    font-size: 2vmax;
+    margin-bottom: 3vmax;
+    /* font-weight: 700;     */
+}
+
+.page3-box1 >button, .page3-box3 >button{
+    padding: 0.8vmax 2.5vmax;
+    font-weight: 700;
+    border-top-left-radius: 1.5vmax;
+    border-top-right-radius: 1.5vmax;
+    border-bottom-left-radius: 1.5vmax;
+    box-shadow: -0.1vmax 0.2vmax 1vmax black;
+    border: none;
+    letter-spacing: 0.1vmax;
+    background-color: black;
+    color: white;
+}
+.page3-box1 >button{
+    margin-left: 10vmax;
+}
+.page3-box3 >button{
+    margin-right: 10vmax;
+}
+.page3-box2{
+    height: 70vh;
+    width: 45%;
+    /* background-color: yellow; */
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.page3-img1{
+    /* background-color: thistle; */
+    height: 21vmax;
+    clip-path: polygon(50% 0%, 100% 0, 100% 40%, 51% 100%, 0 100%, 0% 60%, 0 0);
+    /* padding-left: 2vmax; */
+    margin-top: -4vmax;
+    transform: translateX(1.8vmax);
+    transition: all ease 3s;
+}
+
+.page3-img2{
+    /* background-color: skyblue; */
+    height: 20vmax;
+    margin-top: 6vmax;
+    margin-right: 7vmax;
+    transform: translateX(-4.4vmax);
+    transition: all ease 3s;
+    clip-path: polygon(47% 0, 100% 0, 100% 40%, 100% 100%, 0 100%, 0 59%, 26% 29%);
+}
+
+@media (max-width: 600px) {
+    .page3{
+        margin-top: 10vh;
+        height: 100vh;
+        width: 100%;
+    }
+    .page3-headding{
+        /* background-color: red; */
+        width: 90%;
+        height: 15vh;
+        justify-content: start;
+        
+    }
+    .page3-headding >h1{
+        text-align: center;
+        line-height: 4vmax;
+        font-size: 3.5vmax;
+        margin-bottom: 1vmax;
+        font-weight: 700;
+    }
+    .page3-contener{
+        height: 100vh;
+        width: 100%;
+        margin-top: 5vh;
+        align-items: center;
+        flex-direction: column;
+    }
+    .page3-box2{
+        width: 85%;
+        height: 50vh;
+        /* background-color: red; */
+        margin: -15vh 0 5vh 0;
+    }
+    .page3-box1,.page3-box3{
+        width: 80%;
+    }
+    .page3-box1 >p,.page3-box3 >p{
+        word-spacing: 1vw;
+        margin-top: 1vh;
+    }
+    .page3-box1 >button,.page3-box3 >button{
+        margin: auto;
+        
+    }
+
+}
+/* ==================== PAGE 3 COMPLETE ======================= */
+
+/* ==================== PAGE 4 STARTS ======================= */
+
+.page4{
+    margin-top: 5vmax;
+    height: 100vh;
+    width: 100%;
+    /* background-color: lightblue; */
+}
+.page4-headding{
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: pink; */
+}
+.page4-headding >h1{
+    width: 90%;
+    line-height: 4vmax;
+    text-align: center;
+    /* background-color: red; */
+    font-size: 4vmax;
+    /* text-shadow: 0 0 0.5vmax rgba(0, 0, 0, 0.575) ; */
+    /* letter-spacing: .5vmax; */
+    font-family: 'Ysabeau SC', sans-serif;
+    /* font-family: 'Yesteryear', cursive; */
+
+}
+.page4-contener{
+    height: 80vh;
+    width: 100%;
+    /* background-color: lightcoral; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.page4-box1, .page4-box3, .page4-box5{
+    /* background-color: oldlace; */
+    height: 80vh;
+    width: 18%;
+}
+.page4-box1-top, .page4-box3-top, .page4-box5-top{
+    height: 40vh;
+    width: 100%;
+    /* background-color: lightslategray; */
+}
+.page4-box1-top >button, .page4-box3-top >button, .page4-box5-top >button{
+    padding: 0.8vmax 1vmax;
+    font-weight: 500;
+    border-top-left-radius: 1.5vmax;
+    border-top-right-radius: 1.5vmax;
+    border-bottom-left-radius: 1.5vmax;
+    box-shadow: -0.1vmax 0.2vmax 1vmax black;
+    border: none;
+    font-size: 0.8vmax;
+    letter-spacing: 0.1vmax;
+    background-color: black;
+    color: white;
+    margin-bottom: 2vmax;
+}
+.page4-box1-bottom, .page4-box3-bottom, .page4-box5-bottom{
+    height: 40vh;
+    width: 100%;
+    /* background-color: tan; */
+}
+.page4-box1-bottom >button, .page4-box3-bottom >button, .page4-box5-bottom >button{
+    padding: 0.8vmax 1vmax;
+    font-weight: 500;
+    border-top-left-radius: 1.5vmax;
+    border-top-right-radius: 1.5vmax;
+    border-bottom-left-radius: 1.5vmax;
+    box-shadow: -0.1vmax 0.2vmax 1vmax black;
+    border: none;
+    font-size: 0.8vmax;
+    letter-spacing: 0.1vmax;
+    background-color: black;
+    color: white;
+    margin-bottom: 2vmax;
+
+}
+.page4-box1-top{
+    background-image: url(./page\ -img-4.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
+.page4-box1-bottom{
+    background-image: url(./page\ -img-1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
+.page4-box3-top{
+    background-image: url(./page\ -img-2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
+.page4-box3-bottom{
+    background-image: url(./page\ -img-6.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
+.page4-box5-top{
+    background-image: url(./page\ -img-3.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
+.page4-box5-bottom{
+    background-image: url(./page\ -img-5.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
+.page4-box2, .page4-box4{
+    width: 18%;
+    height: 45vh;
+    /* background-color: yellowgreen; */
+}
+.page4-box2{
+    background-image: url(./page\ -img-small1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
+.page4-box2 >button, .page4-box4>button{
+    padding: 0.8vmax 1vmax;
+    font-weight: 500;
+    border-top-left-radius: 1.5vmax;
+    border-top-right-radius: 1.5vmax;
+    border-bottom-left-radius: 1.5vmax;
+    box-shadow: -0.1vmax 0.2vmax 1vmax black;
+    border: none;
+    font-size: 0.8vmax;
+    letter-spacing: 0.1vmax;
+    background-color: black;
+    margin-bottom: 2vmax;
+    color: white;
+}
+.page4-box4{
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    background-image: url(./page\ -img-small2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+@media (max-width: 600px) {
+    
+    .page4{
+        /* margin-top: 70vh; */
+        height: 100vh;
+        width: 100%;
+    }
+    .page4-headding{
+        height: 20vmax;
+        width: 100%;
+    }
+    .page4-headding >h1{
+        font-size: 3.2vmax;
+        line-height: 3vmax;
+        font-weight: 700;
+        
+    }
+    .page4-contener{
+        height: 200vh;
+        width: 100%;
+        /* background-color: lightcoral; */
+        flex-direction: column;
+        
+    }
+
+    .page4-box1, .page4-box3, .page4-box5{
+        height: 50vh;
+        width: 65%;
+
+        /* background-color: greenyellow; */
+    }
+    .page4-box1-top, .page4-box3-top, .page4-box5-top, .page4-box1-bottom, .page4-box3-bottom, .page4-box5-bottom{
+        height: 25vh;
+    }
+    .page4-box2, .page4-box4{
+        height: 30vh;
+        width: 70%;
+
+        /* background-color: orangered; */
+    }
+    .page4-box1-top >button, .page4-box3-top >button, .page4-box5-top >button,
+    .page4-box1-bottom >button, .page4-box3-bottom >button, .page4-box5-bottom >button, .page4-box2 >button,.page4-box4>button{
+    padding: 1.5vmax 2vmax;
+    font-weight: 700;
+    border-top-left-radius: 1.5vmax;
+    border-top-right-radius: 1.5vmax;
+    border-bottom-left-radius: 1.5vmax;
+    box-shadow: -0.1vmax 0.2vmax 1vmax black;
+    border: none;
+    font-size: 1.5vmax;
+    letter-spacing: 0.1vmax;
+    background-color: black;
+    color: white;
+    }
+    .page4-box1-bottom  ,.page4-box3-top , .page4-box5-bottom ,.page4-box4{
+        justify-content: start;
+    }
+}
+
+/* ==================== PAGE 4 COMPLETE ======================= */
+
+/* ==================== PAGE 5 STARTS ======================= */
+
+.page5{
+    height: 100vh;
+    width: 100%;
+    margin-top: 2vmax;
+    /* background-color: peru; */
+}
+
+.page5-headding{
+    height: 25vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    /* background-color: g  reenyellow; */
+    margin-bottom: 1vmax;
+}
+.page5-headding >h1{
+    width: 90%;
+    /* background-color: aqua; */
+    /* line-height: 4vmax; */
+    text-align: center;
+    font-family: 'Ysabeau SC', sans-serif;
+    font-size: 4vmax;
+    /* letter-spacing: .5vmax; */
+    /* font-family: 'Yesteryear', cursive; */
+}
+.page5-headding >p{
+    text-align: center;
+    font-size: 2vmax;
+    /* font-weight: 700; */
+    font-family: 'Nanum Brush Script', cursive;
+
+}
+.page5-book-table{
+    height: 50vh;
+    width: 100%;
+    margin-bottom: 2vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: red; */
+}
+.page5-book-table >p{
+    /* font-family: 'Nanum Brush Script', cursive; */
+    /* font-size: 2vmax; */
+    font-weight: 700;
+    width: 80%;
+    font-family: 'Ysabeau SC', sans-serif;
+    text-align: center;
+}
+.page5-book-table >form{
+    text-align: center;
+    /* background-color: wheat; */
+    height: 50vh;
+    width: 60%;
+}
+.page5-book-table >form >input{
+    padding: 0.5vmax 3.5vmax;
+    margin-bottom: 1vmax;
+    border: none;
+    /* background-color: red; */
+    outline: none;
+    font-weight: 600;
+    border-radius: .5vmax;
+    text-align: center;
+    color: white;
+    box-shadow: 0 0 2vmax black;
+    background-color: rgba(245, 245, 245, 0.541);
+    backdrop-filter: blur(15vmax);
+}
+.page5-book-table >form >input::placeholder{
+    text-align: center;
+    color: black;
+    font-weight: 700;
+}
+.page5-book-table >form >select{
+    padding: 0.4vmax 16vmax;
+    margin-bottom: 1vmax;
+    border: none;
+    box-shadow: 0 0 2vmax black;
+    outline: none;
+    font-weight: 700;
+    border-radius: .5vmax;
+    /* background-color: orchid; */
+    background-color: rgba(245, 245, 245, 0.541);
+    backdrop-filter: blur(15vmax);
+
+}
+.page5-book-table >form >select >option{
+    background:none;
+    backdrop-filter: blur(15vmax);
+}
+.page-5button{
+    display: flex;
+    width: 85%;
+    justify-content: end;
+    /* background-color: yellow; */
+}
+.page-5button >button{
+    padding: 0.8vmax 2vmax;
+    font-weight: 700;
+    border-top-left-radius: 1.5vmax;
+    border-top-right-radius: 1.5vmax;
+    border-bottom-left-radius: 1.5vmax;
+    box-shadow: -0.1vmax 0.2vmax 1vmax black;
+    border: none;
+    font-size: 1vmax;
+    letter-spacing: 0.1vmax;
+    background-color: black;
+    color: white;
+   
+}
+.page5-contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    /* background-color: royalblue; */
+    height: 15vh;
+    width: 100%;
+    
+}
+.page5-contact >p{
+    text-align: center;
+    font-size: 1.5vmax;
+    /* font-weight: 700; */
+    /* font-family: 'Nanum Brush Script', cursive; */
+    font-family: 'Ysabeau SC', sans-serif;
+}
+.page5-contact-logo{
+    display: flex;
+    gap: 0.5vmax;
+    /* background-color: white; */
+}
+.page5-contact-logo >i{
+    font-size: 2vmax;
+    padding: .5vmax;
+
+    border-radius: .5vmax;
+    background-color:rgba(245, 245, 245, 0.068);
+    backdrop-filter: blur(2vmax);
+}
+
+@media (max-width: 600px) {
+    .page5{
+        margin-top: 120vh;
+        height: 90vh;
+        width: 100%;
+        /* background-color: red; */
+    } 
+    .page5-headding{
+        height: 19vh;
+        /* background-color: palegreen; */
+        justify-content: end;
+        margin-bottom: 4vh;
+    }
+    .page5-headding >h1{
+        width: 100%;
+        margin-bottom: 1vh;
+        /* background-color: red; */
+    }
+    .page5-book-table{
+        height: 50vh;
+        width: 100%;
+        /* background-color: violet; */
+    }
+    .page5-book-table >form{
+        width: 100%;
+        margin-top: 5vh;
+    }
+    .page5-book-table >form >input{
+        width: 90%;
+        padding: 1vmax;
+        /* margin-bottom: 2vmax; */
+        /* background-color: beige; */
+        
+    }
+    .page5-book-table >form >select{
+        padding: 1vmax;
+        /* margin-bottom: 2vmax; */
+        border: none;
+        width: 90%;
+        text-align: center;
+        box-shadow: 0 0 2vmax black;
+        outline: none;
+        font-weight: 700;
+        border-radius: .5vmax;
+        /* background-color: orchid; */
+        background-color: rgba(245, 245, 245, 0.541);
+        backdrop-filter: blur(15vmax);
+    
+    }
+    .page-5button >button{
+        padding: 1.5vmax 2.5vmax;
+        margin-bottom: 5vh;
+        margin-top: -2vh;
+    }   
+}
