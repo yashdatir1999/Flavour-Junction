@@ -71,15 +71,15 @@ body{
 .page1-logo >h1 >img{
     height: 19vh;
     transform: translate(5vmax , -1.5vmax);
-   
 }
 .page1-logo >h1{
+
     
     height: 15vh;
     font-weight: 900;
     text-shadow: 0 0 2vmax rgba(226, 212, 212, 0.699);
     /* padding-top: 2vh; */
-    margin-left: 2vw;
+    /* margin-left: 0.5vw; */
     font-size: 4vmax;
     color: whitesmoke;
     /* font-family: 'Dancing Script', cursive; */
@@ -100,7 +100,7 @@ body{
 .page1-left >button{
     margin: 5vh 5vw;
     padding: 1vmax 2.5vmax;
-    font-weight: 700;
+    font-weight: 900;
     border-top-left-radius: 1.5vmax;
     border-top-right-radius: 1.5vmax;
     border-bottom-left-radius: 1.5vmax;
@@ -221,6 +221,7 @@ body{
 .page2-headding >p{
     text-align: center;
     /* font-size: 2vmax; */
+    /* background-color: red; */
     font-weight: 200;
     font-family: 'Nanum Brush Script', cursive;
 }
@@ -440,24 +441,24 @@ body{
 }
 .page3-box1 >p, .page3-box3 >p{
     /* font-family: 'Nanum Brush Script', cursive; */
-    line-height: 1.8vmax;
-    font-family: 'Caveat', cursive;
-    font-size: 2vmax;
+    line-height: 1.5vmax;
+    font-family: 'Ysabeau SC', sans-serif;
+    font-size: 1.5vmax;
     margin-bottom: 3vmax;
     /* font-weight: 700;     */
 }
 
 .page3-box1 >button, .page3-box3 >button{
     padding: 0.8vmax 2.5vmax;
-    font-weight: 700;
+    font-weight: 900;
     border-top-left-radius: 1.5vmax;
     border-top-right-radius: 1.5vmax;
     border-bottom-left-radius: 1.5vmax;
     box-shadow: -0.1vmax 0.2vmax 1vmax black;
     border: none;
     letter-spacing: 0.1vmax;
-    background-color: black;
-    color: white;
+    background-color: yellow;
+    color: black;
 }
 .page3-box1 >button{
     margin-left: 10vmax;
@@ -591,7 +592,7 @@ body{
 }
 .page4-box1-top >button, .page4-box3-top >button, .page4-box5-top >button{
     padding: 0.8vmax 1vmax;
-    font-weight: 500;
+    font-weight: 900;
     border-top-left-radius: 1.5vmax;
     border-top-right-radius: 1.5vmax;
     border-bottom-left-radius: 1.5vmax;
@@ -599,8 +600,8 @@ body{
     border: none;
     font-size: 0.8vmax;
     letter-spacing: 0.1vmax;
-    background-color: black;
-    color: white;
+    background-color: yellow;
+    color: black;
     margin-bottom: 2vmax;
 }
 .page4-box1-bottom, .page4-box3-bottom, .page4-box5-bottom{
@@ -610,7 +611,7 @@ body{
 }
 .page4-box1-bottom >button, .page4-box3-bottom >button, .page4-box5-bottom >button{
     padding: 0.8vmax 1vmax;
-    font-weight: 500;
+    font-weight: 900;
     border-top-left-radius: 1.5vmax;
     border-top-right-radius: 1.5vmax;
     border-bottom-left-radius: 1.5vmax;
@@ -618,8 +619,8 @@ body{
     border: none;
     font-size: 0.8vmax;
     letter-spacing: 0.1vmax;
-    background-color: black;
-    color: white;
+    background-color: yellow;
+    color: black;
     margin-bottom: 2vmax;
 
 }
@@ -693,7 +694,7 @@ body{
 }
 .page4-box2 >button, .page4-box4>button{
     padding: 0.8vmax 1vmax;
-    font-weight: 500;
+    font-weight: 900;
     border-top-left-radius: 1.5vmax;
     border-top-right-radius: 1.5vmax;
     border-bottom-left-radius: 1.5vmax;
@@ -701,9 +702,9 @@ body{
     border: none;
     font-size: 0.8vmax;
     letter-spacing: 0.1vmax;
-    background-color: black;
+    background-color: yellow;
     margin-bottom: 2vmax;
-    color: white;
+    color: black;
 }
 .page4-box4{
     display: flex;
@@ -758,7 +759,7 @@ body{
     .page4-box1-top >button, .page4-box3-top >button, .page4-box5-top >button,
     .page4-box1-bottom >button, .page4-box3-bottom >button, .page4-box5-bottom >button, .page4-box2 >button,.page4-box4>button{
     padding: 1.5vmax 2vmax;
-    font-weight: 700;
+    font-weight: 900;
     border-top-left-radius: 1.5vmax;
     border-top-right-radius: 1.5vmax;
     border-bottom-left-radius: 1.5vmax;
@@ -766,8 +767,8 @@ body{
     border: none;
     font-size: 1.5vmax;
     letter-spacing: 0.1vmax;
-    background-color: black;
-    color: white;
+    background-color: yellow;
+    color: black;
     }
     .page4-box1-bottom  ,.page4-box3-top , .page4-box5-bottom ,.page4-box4{
         justify-content: start;
@@ -838,33 +839,35 @@ body{
 }
 .page5-book-table >form >input{
     padding: 0.5vmax 3.5vmax;
-    margin-bottom: 1vmax;
+    /* margin-bottom: 1vmax; */
+    margin: 0.5vmax;
     border: none;
     /* background-color: red; */
     outline: none;
-    font-weight: 600;
+    font-weight: 900;
     border-radius: .5vmax;
     text-align: center;
-    color: white;
+    color: black;
     box-shadow: 0 0 2vmax black;
-    background-color: rgba(245, 245, 245, 0.541);
+    /* background-color: rgba(245, 245, 245, 0.541); */
+
     backdrop-filter: blur(15vmax);
 }
 .page5-book-table >form >input::placeholder{
     text-align: center;
     color: black;
-    font-weight: 700;
+    font-weight: 900;
 }
 .page5-book-table >form >select{
-    padding: 0.4vmax 16vmax;
-    margin-bottom: 1vmax;
+    padding: 0.4vmax 17.5vmax;
+    margin: 0.5vmax;
     border: none;
     box-shadow: 0 0 2vmax black;
     outline: none;
-    font-weight: 700;
+    font-weight: 900;
     border-radius: .5vmax;
     /* background-color: orchid; */
-    background-color: rgba(245, 245, 245, 0.541);
+    /* background-color: rgba(245, 245, 245, 0.541); */
     backdrop-filter: blur(15vmax);
 
 }
@@ -874,13 +877,13 @@ body{
 }
 .page-5button{
     display: flex;
-    width: 85%;
-    justify-content: end;
+    width: 95%;
+    justify-content: center;
     /* background-color: yellow; */
 }
 .page-5button >button{
-    padding: 0.8vmax 2vmax;
-    font-weight: 700;
+    padding: 0.8vmax 7vmax;
+    font-weight: 900;
     border-top-left-radius: 1.5vmax;
     border-top-right-radius: 1.5vmax;
     border-bottom-left-radius: 1.5vmax;
@@ -888,8 +891,8 @@ body{
     border: none;
     font-size: 1vmax;
     letter-spacing: 0.1vmax;
-    background-color: black;
-    color: white;
+    /* background-color: rgba(255, 255, 0, 0.815); */
+    color: black;
    
 }
 .page5-contact{
@@ -968,13 +971,17 @@ body{
         font-weight: 700;
         border-radius: .5vmax;
         /* background-color: orchid; */
-        background-color: rgba(245, 245, 245, 0.541);
+        /* background-color: rgba(245, 245, 245, 0.541); */
         backdrop-filter: blur(15vmax);
     
     }
     .page-5button >button{
-        padding: 1.5vmax 2.5vmax;
+        font-weight: 900;
+        font-size: 1.7vmax;
+        /* background-color: red; */
+        padding: 1.5vmax 8vmax;
         margin-bottom: 5vh;
-        margin-top: -2vh;
+        margin-top: -1vh;
+        margin-left: 3vmax;
     }   
 }
